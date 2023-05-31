@@ -10,7 +10,7 @@ import {
 export const AuthContext = createContext<AuthContextType | null>(null);
 
 export const AuthProvider = ({ children }: AuthProviderPropsType) => {
-  const initialState: AuthStateType = { isAuthenticated: false, user: null };
+  const initialState: AuthStateType = { isAuthenticated: true, user: null };
 
   const [authState, dispatch] = useReducer(authReducer, initialState);
 
