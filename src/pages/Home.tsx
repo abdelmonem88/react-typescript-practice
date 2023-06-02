@@ -1,5 +1,7 @@
 import React from "react";
-import Modal from "../components/Modal";
+import Modal from "../components/Modal/Modal";
+import ClickIncreas from "../components/HOC/ClickIncreas";
+import HoverIncrease from "../components/HOC/HoverIncrease";
 
 type Props = {};
 
@@ -16,7 +18,7 @@ const Home = (props: Props) => {
       }}
     >
       <h1>Home</h1>
-      <Modal showModal={showModal} setShowModal={setShowModal}>
+      {/* <Modal showModal={showModal} setShowModal={setShowModal}>
         This is a modal. It is not part of the React Router DOM. It is a sibling
       </Modal>
       <button
@@ -32,7 +34,9 @@ const Home = (props: Props) => {
         onClick={() => setShowModal(true)}
       >
         Show Modal
-      </button>
+      </button> */}
+      <ClickIncreas />
+      <HoverIncrease />
     </div>
   );
 };
