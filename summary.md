@@ -20,3 +20,9 @@
 
 - Is a pattern enables us to reuse component logic.
 - HOC is a function that takes a component as an argument and returns a new component.
+
+
+### Render Props
+
+- Is a pattern enables us to reuse component logic.
+- Rernder Props a technique for sharing code between React components using a prop whose value is a function.
